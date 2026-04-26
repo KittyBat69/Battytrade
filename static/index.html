@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battytrade Dashboard</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>Battytrade Smart Dashboard</h1>
+      <button id="refreshBtn">Refresh Signal</button>
+    </header>
+
+    <main class="grid">
+      <section class="card" id="summaryCard">
+        <h2>Market Summary</h2>
+        <div class="kpis" id="summary"></div>
+      </section>
+
+      <section class="card">
+        <h2>Top Signals</h2>
+        <div id="signalTable"></div>
+      </section>
+
+      <section class="card">
+        <h2>วิเคราะห์ก่อนเข้าเทรด</h2>
+        <div class="inline">
+          <select id="symbolSelect"></select>
+          <button id="analyzeBtn">Analyze</button>
+        </div>
+        <pre id="analysisBox">เลือกสินทรัพย์แล้วกด Analyze</pre>
+      </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
